@@ -1,0 +1,34 @@
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\bin\Debug\net6.0\AP-ShopBE.BLL.deps.json
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\bin\Debug\net6.0\AP-ShopBE.BLL.runtimeconfig.json
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\bin\Debug\net6.0\AP-ShopBE.BLL.dll
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\bin\Debug\net6.0\AP-ShopBE.BLL.pdb
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\bin\Debug\net6.0\AP-ShopBE.DAL.dll
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\bin\Debug\net6.0\AP-ShopBE.DAL.pdb
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.csproj.AssemblyReference.cache
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.AssemblyInfoInputs.cache
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.AssemblyInfo.cs
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.csproj.CoreCompileInputs.cache
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.csproj.CopyComplete
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.dll
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\refint\AP-ShopBE.BLL.dll
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.pdb
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.genruntimeconfig.cache
+C:\Users\mak.alijevic\OneDrive - Authority Partners Inc\Desktop\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\ref\AP-ShopBE.BLL.dll
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\bin\Debug\net6.0\AP-ShopBE.BLL.deps.json
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\bin\Debug\net6.0\AP-ShopBE.BLL.runtimeconfig.json
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\bin\Debug\net6.0\AP-ShopBE.BLL.dll
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\bin\Debug\net6.0\AP-ShopBE.BLL.pdb
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\bin\Debug\net6.0\AP-ShopBE.DAL.dll
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\bin\Debug\net6.0\AP-ShopBE.DAL.pdb
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.AssemblyInfoInputs.cache
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.AssemblyInfo.cs
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.csproj.CopyComplete
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.dll
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\refint\AP-ShopBE.BLL.dll
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.pdb
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\AP-ShopBE.BLL.genruntimeconfig.cache
+C:\Users\Korisnik\Desktop\Codes\WebDev\AP-Shop\AP-ShopBE\AP-ShopBE.BLL\obj\Debug\net6.0\ref\AP-ShopBE.BLL.dll

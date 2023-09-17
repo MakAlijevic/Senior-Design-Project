@@ -1,0 +1,23 @@
+<div class="card mt-3">
+    <div class="card-body">
+        <button class="btn" data-bs-toggle="modal" [attr.data-bs-target]="'#Modal' + product.id">
+            <div class="card-img-actions">
+                <img [src]="product.imagePath" class="card-img" width="46" height="250" alt="">
+            </div>
+        </button>
+    </div>
+    <div class="card-body bg-light text-center">
+        <div class="mb-2">
+            <h3 class="font-weight-semibold mb-2">
+                <p class="text-default mb-2" data-abc="true">{{product.productName}}</p>
+            </h3>
+            <h6 class="text-muted" style="font-size: 12px;" data-abc="true">{{product.category.categoryName}}
+            </h6>
+        </div>
+        <h3 class="mb-4 font-weight-semibold" style="font-size: 35px;">{{product.price | currency}}</h3>
+        <button type="button" class="btn btn-dark bg-cart me-3" (click)="addToCart(product.id, 1)"> Add to
+            cart</button>
+        <button type="button" class="btn btn-dark bg-cart ms-3" (click)="buyNow(product.id, 1)">Buy now</button>
+    </div>
+</div>
+<app-product-details-modal [product]="product" [userLoggedIn]="userLoggedIn"></app-product-details-modal>

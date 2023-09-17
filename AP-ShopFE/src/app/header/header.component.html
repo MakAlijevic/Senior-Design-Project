@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+        <a href="#" class="d-flex align-items-center col-md-3 mb-2 text-dark text-decoration-none me-3"
+            routerLink="/homepage">
+            <img class="ms-3 me-3" width="65px" src="../../assets/CarGear Logo.png" alt="">
+            <span style="font-size: 25px;">CarGear</span>
+        </a>
+
+        <form class="d-flex" style="width: 350px;" role="search" *ngIf="(!isHomepage)">
+            <input class="form-control rounded-pill mb-2 ms-4"
+                style="background-color:rgb(220, 220, 220); border-color: transparent;" type="search"
+                placeholder="Search" aria-label="Search" [(ngModel)]="searchParam" name="searchParam">
+            <button class="btn btn-dark mb-2 rounded-pill" type="submit" id="searchButton" (click)="setSearchParam()">
+                <img src="../../assets/CarGear Logo (Dark mode).png" alt="searchLogo" style="width: 20px;"></button>
+        </form>
+
+        <!-- Categories for search -->
+        <!-- <button class="btn dropdown-toggle mb-2" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Dropdown</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul> -->
+
+        <div class="col-md-3 text-end mb-2">
+            <button type="button" class="btn btn-dark me-2 rounded-pill" data-bs-toggle="modal"
+                data-bs-target="#loginModal" *ngIf="!userLoggedIn">Login</button>
+            <button type="button" class="btn btn-dark rounded-pill" data-bs-toggle="modal"
+                data-bs-target="#registerModal" *ngIf="!userLoggedIn">Sign-up</button>
+            <button class="btn btn-dark rounded-pill position-relative me-3" *ngIf="userLoggedIn" data-bs-toggle="modal"
+                data-bs-target="#cartModal">
+                <img src="../../assets/Cart Icon (Dark mode).png" alt="CartIcon" style="height: 25px;">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    style="font-weight: 3!important; background-color: red !important;"
+                    *ngIf="cartItemsCount > 0 && cartItemsCount < 10">
+                    {{cartItemsCount}}
+                </span>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    style="font-weight: 3!important; background-color: red !important;" *ngIf="cartItemsCount > 9">
+                    9+
+                </span>
+            </button>
+            <button class="btn btn-dark rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                *ngIf="userLoggedIn">
+                <img src="../../assets/Account Icon (Dark mode).png" alt="AccountIcon" style="height: 25px;">
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#purchaseHistoryModal">Purchase
+                            History</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" (click)="logout()">Log Out</a></li>
+                </ul>
+            </button>
+        </div>
+    </header>
+</div>
+
+<app-purchase-history-modal></app-purchase-history-modal>

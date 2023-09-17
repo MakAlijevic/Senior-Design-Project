@@ -1,0 +1,19 @@
+h6 {
+    color: rgb(150, 150, 150) !important;
+}
+
+p {
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+    height: 80px !important;
+    max-height: 80px !important;
+}
+
+.card {
+    border-radius: 30px;
+    background-color: rgb(249, 249, 249);
+}
+
+.card-body {
+    border-radius: 30px;
+}

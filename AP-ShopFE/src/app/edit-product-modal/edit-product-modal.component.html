@@ -1,0 +1,63 @@
+<div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="editProductModalLabel">Add Product</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                    (click)="updateIsModified(product.id)"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-outline flex-fill mb-0">
+                    <input name="productName" type="text" id="productName" class="form-control" required
+                        [(ngModel)]="productName" />
+                    <label class="form-label" for="form3Example1c" style="color:gray">Product
+                        Name</label>
+                </div>
+                <div class="form-outline flex-fill mb-0 mt-3">
+                    <input name="imagePath" type="text" id="imagePath" class="form-control" required
+                        [(ngModel)]="imagePath" />
+                    <label class="form-label" for="form3Example1c" style="color:gray">Image
+                        Path</label>
+                </div>
+                <div class="form-outline flex-fill mb-0 mt-3">
+                    <input name="price" type="text" id="price" class="form-control" required [(ngModel)]="price" />
+                    <label class="form-label" for="form3Example1c" style="color:gray">Price</label>
+                </div>
+                <div class="form-outline flex-fill mb-0 mt-3">
+                    <input name="description" type="text" id="description" class="form-control" required
+                        [(ngModel)]="description" />
+                    <label class="form-label" for="form3Example1c" style="color:gray">Description</label>
+                </div>
+                <div class="form-outline flex-fill mb-0 mt-3">
+                    <input name="quantity" type="text" id="quantity" class="form-control" required
+                        [(ngModel)]="quantity" />
+                    <label class="form-label" for="form3Example1c" style="color:gray">Quantity</label>
+                </div>
+                <div class="form-outline flex-fill mb-0 mt-3">
+                    <input name="categoryId" type="text" id="categoryId" class="form-control" required
+                        [(ngModel)]="categoryId" />
+                    <label class="form-label" for="form3Example1c" style="color:gray">Category
+                        ID</label>
+                </div>
+                <div class="form-outline flex-fill mb-0 mt-3">
+                    <input name="conditionId" type="text" id="conditionId" class="form-control"
+                        [(ngModel)]="conditionId" required />
+                    <label class="form-label" for="form3Example1c" style="color:gray">Condition ID</label>
+                </div>
+                <div class="form-outline flex-fill mb-0 mt-3">
+                    <input name="shippingId" type="text" id="shippingId" class="form-control" [(ngModel)]="shippingId"
+                        required />
+                    <label class="form-label" for="form3Example1c" style="color:gray">Shipping
+                        ID</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                    (click)="updateIsModified(product.id)">Close</button>
+                <button type="button" class="btn btn-primary" (click)="updateProduct(product.id)"
+                    data-bs-dismiss="modal">Save
+                    changes</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+@import '~ngx-toastr/toastr';
+
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 100vw;
+    margin-block: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(173, 173, 173);
+    border: .25em solid rgb(255, 255, 255);
+    border-radius: 100vw;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(105, 105, 105);
+    cursor: pointer;
+}
+
+@supports (scrollbar-color: rgb(255, 255, 255) rgb(255, 255, 255)) {
+    * {
+        scrollbar-color: rgb(255, 255, 255) rgb(255, 255, 255);
+    }
+}

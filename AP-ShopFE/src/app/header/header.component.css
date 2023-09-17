@@ -1,0 +1,8 @@
+.btn {
+    outline: transparent;
+}
+
+#searchButton {
+    position: relative;
+    right: 48px;
+}

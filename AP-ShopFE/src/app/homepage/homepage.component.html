@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row height d-flex justify-content-center align-items-center mb-5">
+        <img src="../../assets/Homepage Logo.png" style="width: 300px; transform: rotate(30deg);">
+    </div>
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-8">
+            <div class="search rounded-pill">
+                <form role="search">
+                    <i class="fa fa-search"></i>
+                    <input type="search" class="form-control rounded-pill" placeholder="Search product..."
+                        [(ngModel)]="searchParam" name="searchParam">
+                    <button class="btn btn-dark rounded-pill" type="submit" routerLink="/products"
+                        (click)="setSearchParam()">
+                        <img src="../../assets/CarGear Logo (Dark mode).png" alt="searchLogo" style="width: 25px;">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

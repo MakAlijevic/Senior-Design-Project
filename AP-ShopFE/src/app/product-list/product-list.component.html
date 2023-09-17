@@ -1,0 +1,113 @@
+<div class="row">
+    <div class="col-2">
+        <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+            <a class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <span class="fs-5 fw-semibold">Categories :</span>
+            </a>
+            <ul>
+                <div *ngFor="let category of categories; let i = index">
+                    <li class="mb-1" *ngIf="category.parentId === null">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            [attr.data-bs-target]="'#'+category.categoryName" aria-expanded="false">
+                            {{category.categoryName}}
+                        </button>
+                        <div class="collapse" id="{{category.categoryName}}">
+                            <ul *ngFor="let category of categories">
+                                <!-- <li *ngIf="category.parentId == i+1"><button 
+                                        class="link-dark rounded">{{category.categoryName}}</button>
+                                </li> -->
+                                <div class="form-check" *ngIf="category.parentId == i+1">
+
+                                    <input (click)="setSelected(category.id)" class="form-check-input" type="checkbox"
+                                        value="" id="flexCheckDefault">
+                                    <label class="form-check-label">
+
+                                        {{category.categoryName}}
+
+                                    </label>
+
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="col-10">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 text-center ms-5 mt-2">
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Sort By
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" (click)="setSorting(1)">Name ↑</a></li>
+                        <li><a class="dropdown-item" (click)="setSorting(2)">Name ↓</a></li>
+                        <li><a class=" dropdown-item" (click)="setSorting(3)">Price ↑</a></li>
+                        <li><a class=" dropdown-item" (click)="setSorting(4)">Price ↓</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown col-lg-5 col-md-5 col-sm-5 text-center mt-2">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Filter
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li class="ms-2 me-2">Min Price:<input type="number" class="dropdown-item rounded-pill" min="1"
+                            [defaultValue]="1" [(ngModel)]="minPrice"></li>
+                    <li class="ms-2 me-2">Max Price:<input type="number" class="dropdown-item rounded-pill" min=" 1"
+                            [defaultValue]="1" [(ngModel)]="maxPrice"></li>
+                    <button class="btn btn-primary rounded-pill mt-2 ms-2" type="button"
+                        (click)="handlePriceFilter()">Apply filter</button>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 d-flex justify-content-end mt-2">
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#addProductModal"
+                    *ngIf="userRole == 2">
+                    Add Product
+                </button>
+            </div>
+        </div>
+        <div class="col-9 d-flex justify-content-center" *ngIf="isLoading">
+            <div class="spinner-border" role="status" style="width: 3rem; height: 3rem; margin-top: 175px;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-3 ms-3 me-2" *ngIf="!isLoading">
+            <div class="col-lg-3 col-md-6 col-sm-12" *ngFor="let product of products; let i = index">
+                <app-product-card [product]="product"></app-product-card>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="col-9 d-flex justify-content-center mt-5 ms-4" aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" style="color: black;"
+                            (click)="setPageNumber(pageNumber-1)" *ngIf="pageNumber > 1">Previous</a></li>
+                    <li class="page-item"><a class="page-link" style="color: black;"
+                            (click)="setPageNumber(pageNumber-1)" *ngIf="pageNumber > 1">{{pageNumber-1}}</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" style="color: black;"
+                            (click)="setPageNumber(pageNumber)">{{pageNumber}}</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" style="color: black;"
+                            (click)="setPageNumber(pageNumber+1)"
+                            *ngIf="(pageNumber+1)*12 < totalSearchedProductsCount + 12">{{pageNumber+1}}</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" style="color: black;"
+                            (click)="setPageNumber(pageNumber+1)"
+                            *ngIf="(pageNumber)*12 < totalSearchedProductsCount">Next</a></li>
+                </ul>
+            </nav>
+            <div class="col-lg-2 col-md-2 col-sm-2 d-flex justify-content-end align-items-center mt-2">
+                <button class="btn btn-secondary" style="height: 40px;" data-bs-toggle="modal"
+                    data-bs-target="#addProductModal" *ngIf="userRole == 2">
+                    Add Product
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-add-product-modal *ngIf="userRole == 2"></app-add-product-modal>

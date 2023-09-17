@@ -1,0 +1,113 @@
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="was-validated">
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-user fa-lg fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                            <input [(ngModel)]="firstName" name="firstName" type="text" id="registerName"
+                                class="form-control" style="font-size: 19px;" required />
+                            <p class="form-label" for="form3Example1c" style="color:#838383; font-size: 13px;">
+                                First
+                                Name</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-envelope fa-lg fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                            <input [(ngModel)]="lastName" name="lastName" type="text" id="registerSurname"
+                                style="font-size: 19px;" class="form-control" required />
+                            <p class="form-label" for="form3Example3c" style="color:#838383; font-size: 13px;">
+                                Surname</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-envelope fa-lg fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                            <input [(ngModel)]="email" name="email" type="email" id="registerEmail"
+                                style="font-size: 19px;" class="form-control" required />
+                            <p class="form-label" for="form3Example3c" style="color:#838383; font-size: 13px;">
+                                Email</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-envelope fa-lg fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                            <input [(ngModel)]="address" name="address" type="text" id="registerAddress"
+                                style="font-size: 19px;" class="form-control" required />
+                            <p class="form-label" for="form3Example3c" style="color:#838383; font-size: 13px;">
+                                Address</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center justify-content-center mb-1">
+                        <div class="form-check form-check-inline">
+                            <input [(ngModel)]="gender" class="form-check-input" type="radio" name="inlineRadioOptions"
+                                id="inlineRadio1" value="Male" required>
+                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input [(ngModel)]="gender" class="form-check-input" type="radio" name="inlineRadioOptions"
+                                id="inlineRadio2" value="Female" required>
+                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input [(ngModel)]="gender" class="form-check-input" type="radio" name="inlineRadioOptions"
+                                id="inlineRadio3" value="Other" required>
+                            <label class="form-check-label" for="inlineRadio3">Other</label>
+                        </div>
+                    </div>
+                    <p class="form-label text-center mb-4" for="form3Example3c" style="color:#838383; font-size: 13px;">
+                        Gender</p>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-envelope fa-lg fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                            <input [(ngModel)]="username" name="username" type="text" id="registerUsername"
+                                style="font-size: 19px;" class="form-control" required />
+                            <p class="form-label" for="form3Example3c" style="color:#838383; font-size: 13px;">
+                                Username</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-3">
+                        <i class="fas fa-lock fa-lg fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                            <input [(ngModel)]="password" name="password" type="password" id="registerPassword"
+                                style="font-size: 19px;" class="form-control" required />
+                            <p class="form-label" for="form3Example4c" style="color:#838383; font-size: 13px;">
+                                Password</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center justify-content-center">
+                        <select [(ngModel)]="countryId" class="btn btn-dark mb-1 rounded-pill" name="country"
+                            id="country">
+                            <option disabled>Select Country</option>
+                            <option *ngFor="let country of countries; let i = index" value="{{i}}">
+                                {{country.countryName}}
+                            </option>
+                        </select>
+                    </div>
+                    <p class="form-label text-center mb-4 me-3" for="form3Example3c"
+                        style="color:#838383; font-size: 13px;">
+                        Country</p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button id="register" type="submit" class="btn btn-primary rounded-pill" data-bs-dismiss="modal"
+                            (click)="register()">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
