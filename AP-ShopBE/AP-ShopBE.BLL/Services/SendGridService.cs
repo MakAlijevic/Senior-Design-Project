@@ -40,7 +40,7 @@ namespace AP_ShopBE.BLL.Services
 
             var apiKey = configuration.GetSection("AppSettings:SENDGRID_API_KEY").Value;
             var client = new SendGridClient(apiKey);
-            var from = new EmailAddress("mak.alijevic@authoritypartners.com", "CarGear Shop");
+            var from = new EmailAddress("email.example@gmail.com", "CarGear Shop");
             var subject = "CarGear Shop Order Receipt";
             var to = new EmailAddress(user.email, "User");
             var plainTextContent = "";
